@@ -57,9 +57,9 @@
           <datasetid>document</datasetid>
           <filename>plugins/EPrints/MetaField/Orcid.pm</filename>
           <mime_type>text/plain</mime_type>
-          <hash>dfae4ace28b3f211e5b3afd11ff5ae6f</hash>
+          <hash>980cb1eae7a1ba049ae327c56523df8b</hash>
           <hash_type>MD5</hash_type>
-          <filesize>4749</filesize>
+          <filesize>4993</filesize>
         </file>
         <file>
           <datasetid>document</datasetid>
