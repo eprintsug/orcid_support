@@ -16,13 +16,13 @@ B<update_eprint_orcids> - Update ORCID subfields of creators, editors or any oth
 
 =head1 SYNOPSIS
 
-B<update_eprint_orcids> - I<repository_id> I<user_mapping_field> [B<options>]
+B<update_eprint_orcids> - I<repository_id> [B<options>]
 
 =head1 DESCRIPTION
 
-Update ORCID subfields of creators, editors or any other fields specified by $c->{orcid}->{eprint_fields}.
+Update ORCID subfields of creators, editors or any other fields specified by C<$c->{orcid}->{eprint_fields}>.
 
-This script will search the repository for eprints that have fields listed in $c->{orcid}->{eprint_fields} that have their ID field set but not their ORCID.  It will then take the map across the ORCID field from the user record.
+This script will search the repository for eprints that have fields listed in C<$c->{orcid}->{eprint_fields}> that have their ID field set but not their ORCID.  It will then take the map across the ORCID field from the user record.
 
 =head1 ARGUMENTS
 
@@ -32,10 +32,6 @@ This script will search the repository for eprints that have fields listed in $c
 
 The ID of the EPrint repository to search.
 
-=item B<user_mapping_field>
-
-The user field that maps to creators. editors. etc. ID.
-
 =back
 
 =head1 OPTIONS
@@ -44,17 +40,15 @@ The user field that maps to creators. editors. etc. ID.
 
 =item B<--check>
 
-Just check for which eprints and fields will be updated
+Just check for which eprints and fields will be updated.
 
 =item B<--contributor-id> I<contributor_id>
 
-Only updste eprint ORCIDs for a specific contributor_id
+Only update eprint ORCIDs for a specific contributor_id
 
 =item B<--contributor-id-field> I<contributor_id_field>
 
-Use CONTRIBUTOR_contributor_id_field rather than CONTRIBUTOR_id
-
-Only updste eprint ORCIDs for a specific contributor_id
+Use CONTRIBUTOR_contributor_id_field rather than CONTRIBUTOR_id.
 
 =item B<--help>
 
@@ -70,7 +64,7 @@ Be vewwy vewwy quiet. This option will supress all output unless an error occurs
 
 =item B<--user_field> I<user_field>
 
-Use specified user_field rather than email
+Use specified user_field rather than email.
 
 =item B<--verbose>
 
