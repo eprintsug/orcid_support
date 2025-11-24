@@ -126,6 +126,8 @@ $c->add_dataset_trigger( 'eprint', EPrints::Const::EP_TRIGGER_BEFORE_COMMIT, sub
 package EPrints::Script::Compiled;
 use strict;
 
+no warnings 'redefine';
+
 sub run_people_with_orcids
 {
     my( $self, $state, $value ) = @_;
